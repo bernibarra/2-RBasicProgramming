@@ -31,7 +31,7 @@
 
 # Write a function `make_introduction()` that takes in two args: name, and age.
 # This function should return a string value that says
-# "Hello, my name is {name}, and I'm {age} years old".
+# "Hello, my name is {name}, and I'm {age} years old.".
 
 
 # Create a variable `my_intro` by passing your variables `my_name` and `my_age`
@@ -127,7 +127,7 @@
 # a name, an age, and a character string for your next (upcoming) birthday.
 # This method should return a character string of the format:
 # "Hello, my name is {name}, and I'm {age} years old.
-#  In {N} days I'll be {new_age}"
+#  In {N} days I'll be {new_age}."
 # You must utilize your `make_introduction()` function from Part 1,
 # and compute {N} and {new_age} in your function
 
