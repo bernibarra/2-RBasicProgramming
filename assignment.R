@@ -1,10 +1,10 @@
 # a2-foundational-skills
 
 
-# Set up and Defining variables -----------------------------------------------------------------
+# Set up and Defining variables ------------------------------------------------
 
 # Install and load the the `stringr` package
-# It has a variety of built in functions that make working with string variables easier
+# It has a variety of functions that make working with string variables easier
 
 
 # Create a numeric variable `my_age` that is equal to your age
@@ -13,52 +13,61 @@
 # Create a variable `my_name` that is equal to your first name
 
 
-# Using multiplication, create a variable `minutes_in_a_day` that is equal to the number of minutes in a day
+# Using multiplication, create a variable `minutes_in_a_day` that is
+# equal to the number of minutes in a day
 
 
-# Using multiplication, create a variable `hours_in_a_year` that is the number of hours in a year
+# Using multiplication, create a variable `hours_in_a_year` that is
+# equal to the number of hours in a year
 
 
-# Create a variable `more_minutes_than_hours` that is a boolean value (TRUE/FALSE)
-# It should be TRUE if there are more minutes in a day than hours in a year, otherwise FALSE
+# Create a variable `more_minutes_than_hours` that is boolean (TRUE/FALSE)
+# It should be TRUE if there are more minutes/day than hours/year
+# Otherwise it should be FALSE
 
 
 
-# Working with functions ----------------------------------------------------------
+# Working with functions -------------------------------------------------------
 
-# Write a function `make_introduction()` that takes in two arguments: name, and age. 
-# This function should return a string value that says "Hello, my name is {name}, and I'm {age} years old".
-
-
-# Create a variable `my_intro` by passing your variables `my_name` and `my_age` into your `make_introduction()` function
+# Write a function `make_introduction()` that takes in two args: name, and age.
+# This function should return a string value that says
+# "Hello, my name is {name}, and I'm {age} years old".
 
 
-# Create a variable `casual_intro` by substituting "Hello, my name is ", with "Hey, I'm" in your `my_intro` variable 
+# Create a variable `my_intro` by passing your variables `my_name` and `my_age`
+# into your `make_introduction()` function
 
 
-# Create a new variable `loud_intro`, which is your `my_intro` variable in all upper-case letters
+# Create a variable `casual_intro` by substituting "Hello, my name is ",
+# with "Hey, I'm" in your `my_intro` variable
 
 
-# Create a new variable `quiet_intro`, which is your `my_intro` variable in all lower-case letters
+# Create a variable `loud_intro`, which is `my_intro` in all upper-case letters
 
 
-# Create a new variable `capitalized`, which is your `my_intro` variable with each word capitalized 
-# hint: use the stringr function `str_to_title`
+# Create a variable `quiet_intro`, which is `my_intro` in all lower-case letters
 
 
-# Using the `str_count` function, create a variable `occurrences` that stores the # of times the letter "e" appears in `my_intro`
+# Create a new variable `capitalized`, which is your `my_intro` variable, but
+# with each word capitalized. hint: use the stringr function `str_to_title`
 
 
-# Write another function `double()` that takes in a variable and returns that variable times two
+# Using the `str_count` function, create a variable `occurrences` that stores
+# the # of times the letter "e" appears in `my_intro`
 
 
-# Using your `double()` function, create a variable `minutes_in_two_days`, which is the number of minutes in two days
+# Write a function `double()` that takes in a value and
+# returns that value times two
 
 
-# Write another function `third_power()` that takes in a value and returns that value cubed
+# Using your `double()` function, create a variable `minutes_in_two_days`,
+# which is the number of minutes in two days
 
 
-# Create a variable `twenty_seven` by passing the number 3 to your `third_power()` function
+# Write a function `cube()` that takes in a value and returns that value cubed
+
+
+# Create a variable `twenty_seven` by passing 3 to your `cube()` function
 
 
 # Vectors ----------------------------------------------------------------------
@@ -66,65 +75,71 @@
 # Create a vector `movies` that contains the names of six movies you like
 
 
-# Create a vector `top_three` that only contains the first three movies in the vector
-# You should do this by subsetting the vector, not by simply retyping the movie names
+# Create a vector `top_three` that only contains the first three movies
+# You should do this by subsetting the vector, not by simply retyping the movies
 
 
-# Using your vector and the `paste()` method, create a vector `excited` that adds the phrase -
-# " is a great movie!" to the end of each element in your movies vector
+# Using your vector and the `paste()` method, create a vector `excited` that
+# adds the phrase - " is a great movie!" to the end of each element `movies`
 
 
-# Create a vector `without_four` that has your first three movies, and your 5th and 6th movies.
-# Again, do this by subsetting the vector, not by simply retyping the movie names
+# Create a vector `without_four` by omitting the fourth element from `movies`
+# Again, do this by subsetting the vector, not by simply retyping the movies
 
 
 # Create a vector `numbers` that is the numbers 700 through 999
 
 
-# Using the built in `length()` function, create a variable `len` that is equal to the length of your vector `numbers`
+# Using the built in `length()` function, create a variable `len` that is
+# equal to the length of your vector `numbers`
 
 
-# Using the `mean()` function, create a variable `numbers_mean` that is the mean of your vector `numbers`
+# Using the `mean()` function, create a variable `numbers_mean` that is
+# equal to the mean of your vector `numbers`
 
 
-# Using the `median()` function, create a variable `numbers_median` that is the median of your vector `numbers`
+# Using the `median()` function, create a variable `numbers_median`
+# that is the median of your vector `numbers`
 
 
 # Create a vector `lower_numbers` that is the numbers 500:699
 
 
-# Create a vector `all_numbers` that combines your `lower_numbers` and `numbers` vectors
+# Create a vector `all_numbers` that combines `lower_numbers` and `numbers`
 
 
-# Dates ---------------------------------------------------------------------------- 
+# Dates ------------------------------------------------------------------------
 
-# Use the `as.Date()` function to create a variable `today` that represents today's date
+# Use the `as.Date()` function to create a variable `today` storing today's date
 # Make sure to use R to get the *current date*
-# Hint: https://www.rdocumentation.org/packages/base/versions/3.3.2/topics/Sys.time
+# See https://stat.ethz.ch/R-manual/R-devel/library/base/html/Sys.time.html
 
 
-# Create a variable `summer_break` that represents the first day of summer break (June 8, 2017)
-# Make sure to use the `as.Date` function again
+# Create a variable `summer_break` that represents the first day of summer break
+# (June 8, 2017). Make sure to use the `as.Date` function again
 
 
-# Create a variable `days_to_break` that is how many days until break (hint: subtract the dates!)
+# Create a variable `days_to_break` that is how many days until break
+# Hint: subtract the dates!
 
 
-# Define a function called `make_birthday_intro()` that takes in three arguments: 
+# Define a function `make_birthday_intro()` that takes in three arguments:
 # a name, an age, and a character string for your next (upcoming) birthday.
 # This method should return a character string of the format:
-#  "Hello, my name is {name}, and I'm {age} years old. In {N} days I'll be {new_age}" 
-# You must utilize your `make_introduction()` function from Part 1, and compute {N} and {new_age} in your function
+# "Hello, my name is {name}, and I'm {age} years old.
+#  In {N} days I'll be {new_age}"
+# You must utilize your `make_introduction()` function from Part 1,
+# and compute {N} and {new_age} in your function
 
 
-# Create a variable `my_bday_intro` using the `make_birthday_intro()` function, passing in `my_name`, `my_age`, and your upcoming birthday.
+# Create a variable `my_bday_intro` using the `make_birthday_intro()` function,
+# passing in `my_name`, `my_age`, and your upcoming birthday.
 
 
 # Challenge ------------------------------------------------------------------
-# Write a function `remove_digits` that will remove all digits (i.e., 0 through 9) from all elements in a *vector of strings*. 
+# Write a function `remove_digits` that will remove all digits
+# (i.e., 0 through 9) from all elements in a *vector of strings*.
 
 
-# Demonstrate that your approach is successful by passing a vector of courses to your function
-# For example, remove_digits(c("INFO 201", "CSE 142"))
-
-             
+# Demonstrate that your approach is successful by passing a vector of courses
+# to your function. For example, remove_digits(c("INFO 201", "CSE 142"))
