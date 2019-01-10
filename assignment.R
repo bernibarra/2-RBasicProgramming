@@ -116,7 +116,7 @@
 
 
 # Create a variable `summer_break` that represents the first day of summer break
-# (June 8, 2018). Make sure to use the `as.Date` function again
+# (June 14, 2019). Make sure to use the `as.Date` function again
 
 
 # Create a variable `days_to_break` that is how many days until break
