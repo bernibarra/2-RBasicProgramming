@@ -1,11 +1,9 @@
-# a2-foundational-skills
-
-
+# a2 foundational skills
 # Set up and Defining variables ------------------------------------------------
 
 # Install and load the the `stringr` package
 # It has a variety of functions that make working with string variables easier
-# install.packages("stringr")
+# install dot packages("stringr")
 library("stringr")
 # Create a numeric variable `my_age` that is equal to your age
 my_age <- 29
@@ -32,8 +30,8 @@ more_minutes_than_hours <- minutes_in_a_day > hours_in_a_year
 # Write a function `make_introduction()` that takes in two args: name, and age.
 # This function should return a string value that says
 # "Hello, my name is {name}, and I'm {age} years old.".
-make_introduction <- function(name, age){
-   paste("Hello, my name is",name,", and I'm", age,"years old.", sep = " ")
+make_introduction <- function(name, age) {
+  paste("Hello, my name is", name, ", and I'm", age, "years old.", sep = " ")
 }
 
 # Create a variable `my_intro` by passing your variables `my_name` and `my_age`
@@ -60,8 +58,8 @@ occurrences <- str_count(my_intro, pattern = "e")
 
 # Write a function `double()` that takes in a value and
 # returns that value times two
-double <- function(val){
-   val * 2
+double <- function(val) {
+  val * 2
 }
 
 # Using your `double()` function, create a variable `minutes_in_two_days`,
@@ -69,8 +67,8 @@ double <- function(val){
 minutes_in_two_days <- double(minutes_in_a_day)
 
 # Write a function `cube()` that takes in a value and returns that value cubed
-cube <- function(val){
-   val ^ 3
+cube <- function(val) {
+  val ^ 3
 }
 
 # Create a variable `twenty_seven` by passing 3 to your `cube()` function
@@ -79,7 +77,7 @@ twenty_seven <- cube(3)
 # Vectors ----------------------------------------------------------------------
 
 # Create a vector `movies` that contains the names of six movies you like
-movies <- c("Up", "Inside Out", "Avatar", "Love, Simon", "Mad Max", "Intersteller")
+movies <- c("Up", "Inside Out", "Avatar", "Love, Simon", "Mad Max", "Gladiator")
 
 # Create a vector `top_three` that only contains the first three movies
 # You should do this by subsetting the vector, not by simply retyping the movies
@@ -91,7 +89,7 @@ excited <- paste(movies[1:length(movies)], "is a great movie!")
 
 # Create a vector `without_four` by omitting the fourth element from `movies`
 # Again, do this by subsetting the vector, not by simply retyping the movies
-without_four <- movies[movies!= movies[4]]
+without_four <- movies[movies != movies[4]]
 
 # Create a vector `numbers` that is the numbers 700 through 999
 numbers <- 700:999
@@ -136,10 +134,10 @@ days_to_break <- summer_break - today
 #  In {N} days I'll be {new_age}."
 # You must utilize your `make_introduction()` function from Part 1,
 # and compute {N} and {new_age} in your function
-make_birthday_intro <- function(name, age, upcoming_bday){
-   new_intro <- make_introduction(name, age)
-   N <- as.Date(upcoming_bday) - today
-   paste(new_intro, "In", N, "days I'll be", age + 1, sep = " ")
+make_birthday_intro <- function(name, age, upcoming_bday) {
+  new_intro <- make_introduction(name, age)
+  N <- as.Date(upcoming_bday) - today
+  paste(new_intro, "In", N, "days I'll be", age + 1, sep = " ")
 }
 
 # Create a variable `my_bday_intro` using the `make_birthday_intro()` function,
@@ -149,8 +147,8 @@ my_bday_intro <- make_birthday_intro(my_name, my_age, "2019-09-06")
 # Challenge ------------------------------------------------------------------
 # Write a function `remove_digits` that will remove all digits
 # (i.e., 0 through 9) from all elements in a *vector of strings*.
-remove_digits <- function(str){
-gsub("[0-9]+","", str)
+remove_digits <- function(str) {
+  gsub("[0-9]+", "", str)
 }
 
 # Demonstrate that your approach is successful by passing a vector of courses
