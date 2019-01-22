@@ -89,7 +89,7 @@ excited <- paste(movies[1:length(movies)], "is a great movie!")
 
 # Create a vector `without_four` by omitting the fourth element from `movies`
 # Again, do this by subsetting the vector, not by simply retyping the movies
-without_four <- movies[movies != movies[4]]
+without_four <- movies[-c(4)]
 
 # Create a vector `numbers` that is the numbers 700 through 999
 numbers <- 700:999
