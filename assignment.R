@@ -68,7 +68,7 @@ minutes_in_two_days <- double(minutes_in_a_day)
 
 # Write a function `cube()` that takes in a value and returns that value cubed
 cube <- function(val) {
-  val ^ 3
+  val^3
 }
 
 # Create a variable `twenty_seven` by passing 3 to your `cube()` function
